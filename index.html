@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <!-- Rating state start -->
+    <div class="mostrar" id="mostrar">
+
+      <div class="envolve-estrela">
+        <img class="estrela" src="images/icon-star.svg" alt="estrela">
+      </div>
+
+      <h1 class="titulo-um">How did we do?</h1>
+
+      <p class="paragrafo-um">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <section class="secao-botoes">
+        <input onclick="pegaId(1)" class="btn" type="button" value="1" id="1">
+        <input onclick="pegaId(2)" class="btn" type="button" value="2" id="2">
+        <input onclick="pegaId(3)" class="btn" type="button" value="3" id="3">
+        <input onclick="pegaId(4)" class="btn" type="button" value="4" id="4">
+        <input onclick="pegaId(5)" class="btn" type="button" value="5" id="5">
+      </section>
+      <button class="btn-submit" id="btn-submit">Submit</button>
+
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="esconder" id="esconder">
+
+      <img class="maquininha" src="images/illustration-thank-you.svg" alt="maquininha">
+
+      <div class="envolve-tks">
+        <h2 id="tksRating"> </h2>
+      </div>
+      
+      <h3>Thank you!</h3>
+
+      <p class="paragrafo-dois">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+
+    </div>
+    <!-- Thank you state end -->
+
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="src/js/index.js"></script>
+</body>
+
+</html>
